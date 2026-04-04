@@ -7,7 +7,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.title("Monte Carlo Simulation, Markov Chain, and Hidden Markov Model")
-st.write("Disusun oleh: ASTHAGINA DELIA PUTRI")
+st.write("""
+PROJEK UTS KOMPUTASI STATISTIKA
+NAMA: ASTHAGINA DELIA P
+NIM: 20244920001""")
 st.header("Flowchart")
 st.image("flowchart_uts.jpg")
 
