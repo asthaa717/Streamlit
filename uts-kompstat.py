@@ -193,13 +193,13 @@ st.markdown("""
 import numpy as np
 import pandas as pd
 def kategori(x):
-    if x < 627:
+    if x < 65:
         return "Rendah"
-    elif x < 1255:
+    elif x < 98:
         return "Sedang"
     else:
         return "Tinggi"
-data["State"] = data["Jumlah Kasus Penyakit - HIV/AIDS Kasus Baru"].apply(kategori)
+data["State"] = data["Jumlah Kasus Penyakit - Angka Kesakitan DBD per 100.000 Penduduk"].apply(kategori)
 states = data["State"].values
 unique_states = ["Rendah", "Sedang", "Tinggi"]
 matrix = pd.DataFrame(0, index=unique_states, columns=unique_states)
