@@ -22,7 +22,7 @@ st.write(data)
 st.caption("Sumber: https://www.bps.go.id/id/statistics-table/3/YTA1Q1ptRmhUMEpXWTBsQmQyZzBjVzgwUzB4aVp6MDkjMyMwMDAw/kasus-penyakit-menurut-provinsi-dan-jenis-penyakit.html?year=2024 (Badan Pusat Statistik (BPS))")
 st.markdown("Dataset yang digunakan berisi data kasus berbagai jenis penyakit di indonesia pada tahun 2024 berdasarkan provinsi. Data ini termasuk data epidemiologi yang dapat digunakan untuk melihat persebaran dan tignkat kejadian penyakit di tiap wilayah." \
 "" \
-"Dataset ini terdiri dari 46 baris dan 7 kolom variabel. setiap aris merepresentasikan satu provinsi, sedangkan kolom berisi indikator penyakit." \
+"Dataset ini terdiri dari 38 baris dan 7 kolom variabel. setiap aris merepresentasikan satu provinsi, sedangkan kolom berisi indikator penyakit." \
 "" \
 "Variabel dalam dataset ini meliputi: Provinsi, angka penemuan TBC, angka keberhasilan pengobatan TBCm jumlah kasus HIV/AIDS, penemuan kasus kusta per 100.000 penduduk, angka kesakitan malaria per 1000 penduduk, dan angka kesakitan DBD per 100.000 penduduk."
 
