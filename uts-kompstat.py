@@ -14,7 +14,7 @@ NAMA: ASTHAGINA DELIA P
 
 NIM: 20244920001""")
 st.header("Flowchart")
-st.image("flowchart_uts.jpg")
+st.image("flowchart uts.jpg")
 
 st.header("Data")
 data = pd.read_csv("Kasus Penyakit Menurut Provinsi dan Jenis Penyakit, 2024.csv")
