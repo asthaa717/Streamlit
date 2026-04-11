@@ -124,7 +124,7 @@ Pada tahap feature engineering, fitur yang digunakan adalah seluruh variabel num
 """)
 
 st.subheader("Monte Carlo Simulation")
-st.wite("Metode Monte Carlo adalah teknik simulasi berbasis komputer yang menggunakan bilangan acak untuk memodelkan dan menganalisis ketidakpastian dalam suatu sistem atau proses, dengan cara menghasilkan banyak kemungkinan nilai berdasarkan distribusi probabilitas tertentu. Pada data kasus Demam Berdarah Dengue (DBD) tersebut, analisis Monte Carlo bertujuan untuk menggambarkan variasi dan kemungkinan sebaran jumlah kasus per 100.000 penduduk dengan mengasumsikan distribusi normal, sehingga dapat memberikan pemahaman yang lebih mendalam mengenai pola fluktuasi data, tingkat ketidakpastian, serta potensi nilai ekstrem yang mungkin terjadi, sebagai dasar dalam pengambilan keputusan atau perencanaan kebijakan kesehatan.")
+st.write("Metode Monte Carlo adalah teknik simulasi berbasis komputer yang menggunakan bilangan acak untuk memodelkan dan menganalisis ketidakpastian dalam suatu sistem atau proses, dengan cara menghasilkan banyak kemungkinan nilai berdasarkan distribusi probabilitas tertentu. Pada data kasus Demam Berdarah Dengue (DBD) tersebut, analisis Monte Carlo bertujuan untuk menggambarkan variasi dan kemungkinan sebaran jumlah kasus per 100.000 penduduk dengan mengasumsikan distribusi normal, sehingga dapat memberikan pemahaman yang lebih mendalam mengenai pola fluktuasi data, tingkat ketidakpastian, serta potensi nilai ekstrem yang mungkin terjadi, sebagai dasar dalam pengambilan keputusan atau perencanaan kebijakan kesehatan.")
 st.markdown("""
 ```python
 import numpy as np
