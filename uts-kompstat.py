@@ -137,6 +137,7 @@ mean = df.mean()
 std = df.std()
 
 # Simulasi Monte Carlo
+st.write(" Metode Monte Carlo adalah teknik simulasi berbasis komputer yang menggunakan bilangan acak untuk memodelkan dan menganalisis ketidakpastian dalam suatu sistem atau proses, dengan cara menghasilkan banyak kemungkinan nilai berdasarkan distribusi probabilitas tertentu. Pada data kasus Demam Berdarah Dengue (DBD) tersebut, analisis Monte Carlo bertujuan untuk menggambarkan variasi dan kemungkinan sebaran jumlah kasus per 100.000 penduduk dengan mengasumsikan distribusi normal, sehingga dapat memberikan pemahaman yang lebih mendalam mengenai pola fluktuasi data, tingkat ketidakpastian, serta potensi nilai ekstrem yang mungkin terjadi, sebagai dasar dalam pengambilan keputusan atau perencanaan kebijakan kesehatan.")
 simulasi = np.random.normal(mean, std, 1000)
 st.write(simulasi[:10])
             
@@ -186,6 +187,7 @@ Hasil simulasi Monte Carlo pada data angka kesakitan Demam Berdarah Dengue (DBD)
 """)
 
 st.subheader("Markov Chain")
+st.write("Metode Markov Chain adalah suatu model probabilistik yang digunakan untuk menggambarkan perpindahan suatu sistem dari satu keadaan (state) ke keadaan lain berdasarkan probabilitas transisi, di mana keadaan pada masa depan hanya bergantung pada keadaan saat ini (sifat memoryless). Pada data kasus Demam Berdarah Dengue (DBD) tersebut, analisis Markov Chain bertujuan untuk memodelkan dinamika perubahan tingkat kasus (rendah, sedang, tinggi) dari waktu ke waktu, sehingga dapat diketahui kecenderungan perpindahan antar kategori, tingkat kestabilan tiap kondisi, serta pola peningkatan atau penurunan kasus, yang berguna sebagai dasar dalam memprediksi perkembangan kasus dan mendukung pengambilan keputusan dalam pengendalian penyakit.")
 
 # Tampilkan code
 st.markdown("""
@@ -271,6 +273,7 @@ Kesimpulannya, kenaikan kasus bisa terjadi cepat (terutama dari sedang ke tinggi
 """)
 
 st.subheader("Hidden Markov Model (HMM)")
+st.write("Model Hidden Markov Model (HMM) adalah pengembangan dari Markov Chain yang digunakan untuk memodelkan sistem dengan keadaan (state) yang tidak dapat diamati secara langsung (tersembunyi), tetapi dapat diperkirakan melalui data observasi yang terlihat, dengan mempertimbangkan probabilitas transisi antar state dan probabilitas emisi dari setiap state. Pada data kasus Demam Berdarah Dengue (DBD) tersebut, analisis HMM bertujuan untuk mengidentifikasi pola tingkat kasus tersembunyi (rendah, sedang, tinggi) berdasarkan data observasi, memahami dinamika perubahan kondisi dari waktu ke waktu, serta mendeteksi kestabilan atau fluktuasi kasus melalui urutan state yang terbentuk, sehingga dapat memberikan insight yang lebih dalam mengenai risiko penyebaran dan membantu dalam prediksi serta pengambilan keputusan penanggulangan penyakit.")
 st.markdown("""
 ```python
 from hmmlearn import hmm
