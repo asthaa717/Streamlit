@@ -185,7 +185,7 @@ st.subheader("Output R")
 st.code(output_usia, language="text")
 
 st.subheader("Grafik")
-st.image("img/tabel 1.png", caption="Correspondence Analysis - Preferensi Konsumen")
+tampil_gambar("tabel 1.png", caption="Correspondence Analysis - Preferensi Konsumen")
 
 st.subheader("Hubungan antara tipe produk dan kelompok usia")
 st.markdown("""
@@ -366,7 +366,7 @@ st.subheader("Output R")
 st.code(output_gender, language="text")
 
 st.subheader("Grafik")
-st.image("img/tabel 2.png", caption="Correspondence Analysis: Tipe Produk vs Jenis Kelamin")
+tampil_gambar("tabel 2.png", caption="Correspondence Analysis: Tipe Produk vs Jenis Kelamin")
 
 st.subheader("Hubungan antara tipe produk dan jenis kelamin")
 st.markdown("""
