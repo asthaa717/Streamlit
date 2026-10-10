@@ -185,7 +185,36 @@ st.subheader("Output R")
 st.code(output_usia, language="text")
 
 st.subheader("Grafik")
-tampil_gambar("img/ca_usia.png", "Correspondence Analysis - Preferensi Konsumen")
+st.image("img/tabel 1.png", caption="Correspondence Analysis - Preferensi Konsumen")
+
+st.subheader("Hubungan antara tipe produk dan kelompok usia")
+st.markdown("""
+**Uji independensi.** χ² = 15,917; df = 6; p-value = 0,01421 (< 0,05), sehingga H₀ ditolak.
+Terdapat hubungan yang **signifikan** antara tipe produk dan kelompok usia.
+
+**Hasil CA.** Total inersia 0,0522. Dimensi 1 menjelaskan 97,8% inersia, sedangkan Dimensi 2 hanya 2,2%,
+sehingga interpretasi cukup memakai Dimensi 1 yang berfungsi sebagai **sumbu usia**
+(kiri = usia muda, kanan = usia lebih tua). Kualitas representasi (qlt) semua titik = 1000.
+Kontributor terbesar Dimensi 1 adalah kelompok Muda (58,5%) dan Serum (43,4%).
+
+| Titik | Koordinat Dim 1 | Posisi |
+|---|---|---|
+| Serum | -0,350 | Paling kiri |
+| Muda (18-25) | -0,281 | Kiri |
+| Moisturizer | -0,151 | Kiri-tengah |
+| Dewasa (26-40) | +0,107 | Dekat pusat |
+| Sunscreen | +0,205 | Kanan |
+| Cleanser | +0,206 | Kanan |
+| Tua (>40) | +0,249 | Paling kanan |
+
+**Pola hubungan:**
+- Serum dan Moisturizer berasosiasi dengan kelompok **Muda** (Serum: 54,5% pembelinya kelompok Muda; frekuensi
+  observasi 30 vs harapan 20,7).
+- Sunscreen dan Cleanser berasosiasi dengan kelompok **Tua dan Dewasa** (Sunscreen-Tua 30 vs harapan 25,1;
+  Cleanser-Tua 25 vs harapan 19,5).
+- Kelompok **Dewasa** dekat dengan pusat, artinya preferensinya mendekati rata-rata populasi.
+- Sunscreen kurang diminati kelompok Muda, dan Serum kurang diminati kelompok Tua.
+""")
 
 # =====================================================================
 # 3. CODE R DAN OUTPUT R: PRODUK vs GENDER
@@ -337,43 +366,9 @@ st.subheader("Output R")
 st.code(output_gender, language="text")
 
 st.subheader("Grafik")
-tampil_gambar("img/ca_gender.png", "Correspondence Analysis: Tipe Produk vs Jenis Kelamin")
+st.image("img/tabel 2.png", caption="Correspondence Analysis: Tipe Produk vs Jenis Kelamin")
 
-# =====================================================================
-# 4. JAWABAN PERTANYAAN
-# =====================================================================
-st.header("4. Jawaban Pertanyaan")
-
-st.subheader("Soal 1: Hubungan antara tipe produk dan kelompok usia")
-st.markdown("""
-**Uji independensi.** χ² = 15,917; df = 6; p-value = 0,01421 (< 0,05), sehingga H₀ ditolak.
-Terdapat hubungan yang **signifikan** antara tipe produk dan kelompok usia.
-
-**Hasil CA.** Total inersia 0,0522. Dimensi 1 menjelaskan 97,8% inersia, sedangkan Dimensi 2 hanya 2,2%,
-sehingga interpretasi cukup memakai Dimensi 1 yang berfungsi sebagai **sumbu usia**
-(kiri = usia muda, kanan = usia lebih tua). Kualitas representasi (qlt) semua titik = 1000.
-Kontributor terbesar Dimensi 1 adalah kelompok Muda (58,5%) dan Serum (43,4%).
-
-| Titik | Koordinat Dim 1 | Posisi |
-|---|---|---|
-| Serum | -0,350 | Paling kiri |
-| Muda (18-25) | -0,281 | Kiri |
-| Moisturizer | -0,151 | Kiri-tengah |
-| Dewasa (26-40) | +0,107 | Dekat pusat |
-| Sunscreen | +0,205 | Kanan |
-| Cleanser | +0,206 | Kanan |
-| Tua (>40) | +0,249 | Paling kanan |
-
-**Pola hubungan:**
-- Serum dan Moisturizer berasosiasi dengan kelompok **Muda** (Serum: 54,5% pembelinya kelompok Muda; frekuensi
-  observasi 30 vs harapan 20,7).
-- Sunscreen dan Cleanser berasosiasi dengan kelompok **Tua dan Dewasa** (Sunscreen-Tua 30 vs harapan 25,1;
-  Cleanser-Tua 25 vs harapan 19,5).
-- Kelompok **Dewasa** dekat dengan pusat, artinya preferensinya mendekati rata-rata populasi.
-- Sunscreen kurang diminati kelompok Muda, dan Serum kurang diminati kelompok Tua.
-""")
-
-st.subheader("Soal 2: Hubungan antara tipe produk dan jenis kelamin")
+st.subheader("Hubungan antara tipe produk dan jenis kelamin")
 st.markdown("""
 **Uji independensi.** χ² = 2,913; df = 3; p-value = 0,4052 (> 0,05), sehingga H₀ gagal ditolak.
 **Tidak ada hubungan yang signifikan** antara tipe produk dan jenis kelamin. Total inersia sangat kecil (0,00955)
@@ -395,7 +390,11 @@ Moisturizer netral (50:50). Namun perbedaan ini kecil dan tidak signifikan, sehi
 pembeda preferensi produk yang berarti.
 """)
 
-st.subheader("Soal 3a: Pola preferensi produk berdasarkan kelompok usia")
+# =====================================================================
+# 4. JAWABAN PERTANYAAN
+# =====================================================================
+
+st.subheader("Pola preferensi produk berdasarkan kelompok usia")
 st.markdown("""
 - **Muda (18-25):** condong ke Serum dan Moisturizer; kurang tertarik pada Sunscreen.
 - **Dewasa (26-40):** relatif seimbang, dengan kecenderungan ringan ke Sunscreen dan Cleanser.
@@ -404,7 +403,7 @@ st.markdown("""
   dan pembersih (Sunscreen, Cleanser).
 """)
 
-st.subheader("Soal 3b: Pola preferensi produk berdasarkan jenis kelamin")
+st.subheader("Pola preferensi produk berdasarkan jenis kelamin")
 st.markdown("""
 - Pria cenderung sedikit lebih banyak memilih **Sunscreen** (55,6% pembelinya Pria).
 - Wanita cenderung sedikit lebih banyak memilih **Cleanser** (57,1% Wanita) dan **Serum** (54,5% Wanita).
@@ -413,7 +412,7 @@ st.markdown("""
   yang kuat.
 """)
 
-st.subheader("Soal 3c: Rekomendasi strategi pemasaran untuk perusahaan skincare")
+st.subheader("Rekomendasi strategi pemasaran untuk perusahaan skincare")
 st.markdown("""
 1. **Segmentasi utama berdasarkan usia, bukan gender**, karena usia terbukti signifikan sedangkan gender tidak.
 2. **Kelompok Muda:** fokus pada Serum dan Moisturizer melalui media sosial, influencer, konten edukasi, serta
