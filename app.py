@@ -6,8 +6,7 @@ import streamlit as st
 st.set_page_config(page_title="Analisis Preferensi Konsumen Skincare", layout="wide")
 
 st.title("Analisis Preferensi Konsumen Produk Skincare")
-st.caption("UTS ANALISIS MULTIVARIAT - Correspondence Analysis | Asthagina Delia Putri")
-
+st.caption("UTS ANALISIS MULTIVARIAT - Correspondence Analysis | Asthagina Delia Putri | 20244920001")
 
 def tampil_gambar(path, caption):
     if os.path.exists(path):
@@ -44,7 +43,7 @@ st.dataframe(data_gender)
 # 2. CODE R DAN OUTPUT R: PRODUK vs USIA
 # =====================================================================
 st.header("2. Correspondence Analysis: Tipe Produk vs Kelompok Usia")
-st.subheader("Code R")
+
 kode_usia = r'''platform <- matrix(
   c(
     40, 30, 20,
@@ -223,7 +222,6 @@ Kontributor terbesar Dimensi 1 adalah kelompok Muda (58,5%) dan Serum (43,4%).
 # 3. CODE R DAN OUTPUT R: PRODUK vs GENDER
 # =====================================================================
 st.header("3. Correspondence Analysis: Tipe Produk vs Jenis Kelamin")
-st.subheader("Code R")
 
 kode_gender = r'''# Matriks asli (Produk di baris, Gender di kolom)
 tabel2 <- matrix(c(45, 45,
