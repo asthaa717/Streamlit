@@ -19,7 +19,10 @@ def tampil_gambar(path, caption):
 # =====================================================================
 # 1. DATA AWAL
 # =====================================================================
-st.header("1. Data Awal")
+st.header("1. Gambaran Data")
+
+st.markdown("""
+Data yang digunakan merupakan data survei terhadap 300 responden untuk mengetahui hubungan antara preferensi tipe produk skincare dengan karakteristik konsumen. Tipe produk yang dianalisis meliputi moisturizer, sunscreen, serum, dan cleanser, sedangkan karakteristik konsumen dikelompokkan berdasarkan usia dan jenis kelamin. Analisis dilakukan menggunakan metode Correspondence Analysis (CA) untuk mengidentifikasi pola hubungan antara kategori produk dan karakteristik konsumen, sehingga dapat diketahui tipe produk yang cenderung berkaitan dengan kelompok konsumen tertentu.""")
 
 st.subheader("Tabel 1: Tipe Produk vs Kelompok Usia")
 data_usia = pd.DataFrame(
