@@ -428,8 +428,3 @@ st.markdown("""
 6. **Moisturizer sebagai produk andalan lintas segmen** karena netral terhadap gender dan relatif diminati semua
    usia, cocok sebagai produk entry-level.
 """)
-
-st.caption(
-    "Catatan: CA bersifat eksploratif dan deskriptif. Tanda koordinat bersifat arbitrer; yang bermakna adalah "
-    "posisi relatif antar titik."
-)
