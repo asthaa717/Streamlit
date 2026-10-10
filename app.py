@@ -6,7 +6,7 @@ import streamlit as st
 st.set_page_config(page_title="Analisis Preferensi Konsumen Skincare", layout="wide")
 
 st.title("Analisis Preferensi Konsumen Produk Skincare")
-st.caption("Praktik 7 - Correspondence Analysis | Asthagina Delia Putri")
+st.caption("UTS ANALISIS MULTIVARIAT - Correspondence Analysis | Asthagina Delia Putri")
 
 
 def tampil_gambar(path, caption):
