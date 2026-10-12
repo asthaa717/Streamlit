@@ -197,7 +197,7 @@ Terdapat hubungan yang **signifikan** antara tipe produk dan kelompok usia.
 **Hasil CA.** Total inersia 0,0522. Dimensi 1 menjelaskan 97,8% inersia, sedangkan Dimensi 2 hanya 2,2%,
 sehingga interpretasi cukup memakai Dimensi 1 yang berfungsi sebagai **sumbu usia**
 (kiri = usia muda, kanan = usia lebih tua). Kualitas representasi (qlt) semua titik = 1000.
-Kontributor terbesar Dimensi 1 adalah kelompok Muda (58,5%) dan Serum (43,4%).
+Kontributor terbesar Dimensi 1 adalah kelompok Muda dan Serum.
 
 | Titik | Koordinat Dim 1 | Posisi |
 |---|---|---|
